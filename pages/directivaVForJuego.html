@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="../css/estilosJuego.css">
+
+</head>
+<body>
+    <header></header>
+    <nav></nav>
+    <section>
+      
+        <div id="myApp2">
+            <h4>Sala de Videojuegos</h4>
+            <input type="text" v-model="nombre" placeholder="Nombre">
+            <input type="text" v-model="genero" placeholder="Género">
+            <input type="text" v-model="plataforma" placeholder="Plataforma">
+            <input type="text" v-model="precio" placeholder="Precio">
+            <button @click="agregarJuego">Agregar Juego</button>
+            <hr>
+            <h1>Lista de Videojuegos</h1>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Género</th>
+                        <th>Plataforma</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="(juego, index) in miarreglo" :key="index">
+                        <td>{{ juego.nombre }}</td>
+                        <td>{{ juego.genero }}</td>
+                        <td>{{ juego.plataforma }}</td>
+                        <td>{{ juego.precio }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <footer></footer>
+    <script src="../js/vForJuego.js"></script>
+</body>
+</html>
