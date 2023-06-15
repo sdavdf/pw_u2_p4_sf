@@ -1,0 +1,30 @@
+.calculadora {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    background-color: cadetblue;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 10px 0px black;
+}
+
+.calculadora input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.calculadora button {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    font-size: 18px;
+}
+
+h1{
+    text-align: center; 
+    background-color: rgb(189, 219, 148);
+}
